@@ -1,4 +1,6 @@
 /*
+Enunciado:
+
 Crear la estructura Empleado que tiene un nombre, apellido, fecha de nacimiento,
 sexo y salario.
 Se pide la función empleadoConMayorSueldo que recibe por parámetro un vector con
