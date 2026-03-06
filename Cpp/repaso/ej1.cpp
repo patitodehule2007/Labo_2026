@@ -30,7 +30,7 @@ Empleado_t mayorempleadoConMayorSueldo(vector<Empleado_t> ListaEmpleados, vector
         {
             EmpleadoMayorSueldo = ListaEmpleados[i];
         }
-        if (ListaEmpleados[i].salario < 400000)
+        if (ListaEmpleados[i].salario <= 400000)
         {
             ListaEmpleados_salarioMenor.push_back(ListaEmpleados[i]);
         }
