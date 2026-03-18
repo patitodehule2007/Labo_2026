@@ -13,12 +13,5 @@ public class DiaLaboral {
         else {
             System.out.println("No es un dia laboral");
         }
-
-
-
-
-
-
-
     }
 }
