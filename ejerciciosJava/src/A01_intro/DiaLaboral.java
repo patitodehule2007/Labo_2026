@@ -1,11 +1,15 @@
 
 package A01_intro;
 import java.util.List;
+import java.util.Scanner;
 
 public class DiaLaboral {
     public static void main(String[] args) {
-        List<String>DiasLaboral = List.of("Lunes","Martes","Miercoles","Jueves","Viernes");
-        String diaSemana = "Domingo";
+        Scanner scanner = new Scanner(System.in);
+        List<String>DiasLaboral = List.of("lunes","martes","miercoles","jueves","viernes");
+        String diaSemana = scanner.next().toLowerCase();
+
+
 
         if(DiasLaboral.contains(diaSemana)){
             System.out.println("Es un dia laboral");
