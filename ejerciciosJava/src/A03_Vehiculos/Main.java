@@ -10,6 +10,10 @@ public class Main {
         autoPrueba.acelerar(392);
         System.out.println("Velocidad: " + autoPrueba.getVelocidad() +   " KM");
 
+        Submarino submarino = new Submarino("gol",9999);
+        submarino.emerger(99999.9);
+        submarino.sumergir(99999.9);
+
 
     }
 }
