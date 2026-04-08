@@ -30,7 +30,7 @@ public class Cohete {
 	else {
               for(int i = this.propulsoresActivos; i <=(this.propulsoresActivos + cantidadPropulsores); i ++){
 		System.out.println("Propulsor " + i + " Activo");
-              this.propulsores+=1;
+              this.propulsoresActivos+=1;
 	      }
 	}
    }
