@@ -17,8 +17,13 @@ public class Main {
         System.out.println("Tiempo para 999km : " + cuete3.calcularTiempo(999));
         System.out.println("Tiempo para -999km : " + cuete3.calcularTiempo(-999));
 
+<<<<<<< HEAD
         System.out.println("Cambiar cuete : " + tecnico1.cambiarCohete(cuete3));
         System.out.println("Cambiar cuete : " + tecnico1.cambiarCohete(cuete1));
 
+=======
+        System.out.println("Cambiar cuete de tecnico 1 a cuete 3 : " + tecnico1.cambiarCohete(cuete3));
+        System.out.println("Cambiar cuete de tecnico 1 a cuete 1 : " + tecnico1.cambiarCohete(cuete1));
+>>>>>>> 6431f52ccd1b75f0bf9b40a5067e9a038099c7f0
     }
 }
