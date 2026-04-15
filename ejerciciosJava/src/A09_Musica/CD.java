@@ -28,6 +28,9 @@ public class CD {
     public  void  eliminar(int pos){
         this.listaCanciones.remove(pos);
     }
+    public int numeroCanciones(){
+        return  this.listaCanciones.size();
+    }
     public  void listarCanciones(){
         for(Cancion cancion: this.listaCanciones){
             System.out.println(cancion.getTitulo());
