@@ -34,11 +34,8 @@ public class Tecnico {
 		  res = true;
 	  }
 	  return res;
-  },
-  public  void  activarPropulsores(int cantidad){
-		coheteAsignado.activarPropulsores(cantidad);
   }
-  public  void  activarPropulsores(int cantidad){
+  public  void  activarPropulsoresPersona(int cantidad){
 		coheteAsignado.activarPropulsores(cantidad);
   }
 }
