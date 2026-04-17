@@ -46,4 +46,8 @@ public class Materia {
         return sumEdades/listaEstudiantes.size();
 
     }
+
+    public  void  agregarContenido(String tema){
+        this.listaContenidos.add(tema);
+    }
 }
