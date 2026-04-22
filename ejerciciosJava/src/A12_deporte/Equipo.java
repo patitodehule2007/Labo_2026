@@ -11,11 +11,11 @@ public class Equipo {
         int found = 0;
         // checkeamos si no se repiten cuando se agregan
         for (Participante p: jugadores) {
-            if(this.estaEnUso(p.getNumeroCamiseta())){
+            if(this.estaEnUso(p.getNumeroCamiseta(),p,jugadores)){
                 found+=1;
             }
         }
-        if(found == 11 && jugadores.size() == 11){
+        if(found == 0 && jugadores.size() == 11){
             this.jugadores = jugadores;
             // checkeamos capitan usando el metodo que filtra
             this.setCapitan(capitan);
@@ -24,14 +24,10 @@ public class Equipo {
             this.horariosJuego = horarioJuego;
         }
     }
-
     public ArrayList<Participante> getJugadores() {
         return jugadores;
     }
 
-    public void setJugadores(ArrayList<Participante> jugadores) {
-        this.jugadores = jugadores;
-    }
 
     public ArrayList<String> getHorarioJuego() {
         return horariosJuego;
@@ -51,11 +47,11 @@ public class Equipo {
         }
     }
 
-    public  boolean estaEnUso(int numCamisa){
+    public  boolean estaEnUso(int numCamisa,Participante ignorando,ArrayList<Participante> jugadores){
         boolean found = false;
-        for(Participante p: this.jugadores) {
+        for(Participante p: jugadores) {
             found = p.getNumeroCamiseta() == numCamisa;
-            if(found){
+            if(found && !p.equals(ignorando)){
                 return  found;
             }
         }
@@ -76,5 +72,8 @@ public class Equipo {
             }
         }
         return  true;
+    }
+    public String JugarPartido(Equipo equipo,int dia,Torneo torneo){
+        return  torneo.agregarPartido(equipo,this,dia);
     }
 }
